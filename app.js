@@ -1,7 +1,15 @@
-console.log('this is linked');
+let promptGuess = prompt('Which number would you like to guess?');
 
-alert('this is an alert');
+function guessedNumber(num) {
+    console.log('the guessed number was:' + num);
+    if (num == 17 ) {
+        alert('Correct!');
+    } else if (num > 17) {
+        alert('Lower');
+    } else {
+        alert('Higher');
+    }
+}
 
-let favoriteColor = prompt('What is your favorite color?');
 
-console.log(favoriteColor);
+console.log(guessedNumber(promptGuess));
